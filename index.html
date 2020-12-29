@@ -6,6 +6,177 @@
   <title>Главная страница сайта гостиницы для котов и кошек «Котейка»</title>
 </head>
 <body>
-
+  <header class="main-header">
+    <nav class="main-header__nav main-navigation">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="63" height="52" alt="Логотип сайта гостиницы котов и кошек Котейка">
+      </a>
+      <ul class="main-navigation__list site-navigation">
+        <li class="site-navigation__item">
+          <a href="#">Почему мы?</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="#">Номера</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="#">Отзывы</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="#">Как нас найти</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Гостиница для котов и кошек «Котейка»</h1>
+    <section class="promo">
+      <h2 class="promo__title">Котейка</h2>
+      <p class="promo__city">Санкт-Петербург</p>
+      <p class="promo__description">Уютная гостиница для котов и кошек</p>
+      <a class="promo__link" href="catalog.html">Забронировать</a>
+      <img class="promo__image" src="img/photo-promo-1.jpg" width="1366" height="504" alt="Уютная гостиница для котов и кошек">
+    </section>
+    <section class="features">
+      <h2 class="features__title">Почему мы?</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__name">Комфортная температура</h3>
+          <p class="features__text">Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Видеонаблюдение</h3>
+          <p class="features__text">Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Услуги Зоотакси</h3>
+          <p class="features__text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Сбалансированное питание</h3>
+          <p class="features__text">Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Ежедневные прогулки</h3>
+          <p class="features__text">По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__name">Лучшие ветеринары</h3>
+          <p class="features__text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="room-offer">
+      <h2 class="room-offer__title">Номера</h2>
+      <section class="room-offer__description room-info">
+        <h3 class="room-info__title">Эконом плюс</h3>
+        <dl class="room-info__list">
+          <dt>Площадь - </dt>
+          <dd>0,90 м<sup>2</sup></dd>
+          <dt>Размеры (ШхГхВ) — </dt>
+          <dd>90х100х180 см</dd>
+          <dt>Цена за сутки: </dt>
+          <dd>200 &#8381;</dd>
+        </dl>
+      </section>
+      <section class="room-offer__reservation room-reservation">
+        <h3 class="room-reservation__title">Забронировать номер</h3>
+        <form class="room-reservation__form" action="#" method="post">
+          <label class="visually-hidden" for="reservation-form-name">Ваше имя</label>
+          <input type="text" name="reservation-form-name" id="reservation-form-name" placeholder="Ваше имя">
+          <label class="visually-hidden" for="reservation-form-pet">Имя Питомца</label>
+          <input type="text" name="reservation-form-pet" id="reservation-form-pet" placeholder="Имя Питомца">
+          <label class="visually-hidden" for="reservation-form-phone">Телефон</label>
+          <input type="tel" name="reservation-form-phone" id="reservation-form-phone" placeholder="Телефон">
+          <label class="visually-hidden" for="reservation-form-email">E-mail</label>
+          <input type="email" name="reservation-form-email" id="reservation-form-email" placeholder="E-mail">
+          <p>
+            <label for="reservation-form-begin-date">Дата заезда с</label>
+            <input type="text" name="reservation-form-begin-date" id="reservation-form-begin-date" placeholder="26.01.2020">
+            <label for="reservation-form-end-date">по</label>
+            <input type="text" name="reservation-form-end-date" id="reservation-form-end-date" placeholder="26.02.2020">
+          </p>
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </section>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <blockquote>
+            <p>Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!</p>
+            <cite>Валерия Гришаева</cite>
+            <time datetime="2019-11-15">15 ноября, 2019</time>
+          </blockquote>
+        </li>
+        <li class="reviews__item">
+          <blockquote>
+            <p>Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В «Котейке» очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
+            <cite>Екатерина Минаева</cite>
+            <time datetime="2019-10-10">10 октября, 2019</time>
+          </blockquote>
+        </li>
+        <li class="reviews__item">
+          <blockquote>
+            <p>Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и «Котейка» отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
+            <cite>Павел Нечаев</cite>
+            <time datetime="2019-08-02">2 августа, 2019</time>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="main-footer__contacts contacts">
+      <h2 class="contacts__title">Как нас найти</h2>
+      <dl class="contacts__list">
+        <dt>Адрес</dt>
+        <dd>Санкт-Петербург, ул Большая Конюшенная, д 19</dd>
+        <dt>Режим работы</dt>
+        <dd>Ежедневно, с 9:00 до 20:00</dd>
+        <dt>Телефон</dt>
+        <dd><a href="tel:+88003335599">8 (800) 333-55-99</a></dd>
+        <dt>E-mail</dt>
+        <dd><a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a></dd>
+        <dt>Социальные сети</dt>
+        <dd>
+          <ul class="contacts__social-list">
+            <li class="contacts__social-item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="contacts__social-item">
+              <a href="#">ВКонтакте</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <img class="contacts__map" src="img/map.jpg" width="798" height="580" alt="Мы находимся по адресу: Санкт-Петербург, ул Большая Конюшенная, д 19">
+    </section>
+    <section class="main-footer__nav footer-navigation">
+      <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
+      <a class="footer-navigation__logo">
+        <img src="img/logo.svg" width="63" height="52" alt="Логотип сайта гостиницы котов и кошек Котейка">
+      </a>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item">
+          <a href="#">Почему мы?</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a href="#">Номера</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a href="#">Отзывы</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a href="#">Как нас найти</a>
+        </li>
+      </ul>
+      <p class="footer-navigation__copyright">© 2019 Все права защищены</p>
+      <a href="#">Политика конфиденциальности</a>
+    </section>
+  </footer>
 </body>
 </html>
